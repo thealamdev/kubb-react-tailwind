@@ -39,6 +39,13 @@ let values = [
         "des": "Curabitur blandit tempus porttitor. Duis at vollisky inceptos mollisestor commodo luctus erat. Morbi risus, porta consectetur vestibulum at eros.",
         "view": 63,
     },
+    {
+        "heading": "Purus Justo Consectetur Ipsum",
+        "date": "21.04.2014 / Photography, Journal",
+        "image": "https://thealamdev.github.io/kuub/images/journal-1.jpg",
+        "des": "Curabitur blandit tempus porttitor. Duis at vollisky inceptos mollisestor commodo luctus erat. Morbi risus, porta consectetur vestibulum at eros.",
+        "view": 63,
+    },
 
 ]
 
@@ -70,7 +77,7 @@ export default function Blog() {
 
         <div className="container">
             <div className="w-2/5 m-auto relative">
-                <div className="w-52 m-auto text-center font-bold text-xl mt-10 before:absolute before:w-28 before:h-0.5 before:bg-slate-600 dark:before:bg-slate-100 before:left-1 before:top-4 after:absolute after:w-28 after:h-0.5 after:bg-slate-600 dark:after:bg-slate-100 after:right-1 after:top-4 dark:text-slate-200">FORM THE JOURNAL</div>
+                <div className="w-52 m-auto text-center text-heading mt-10 before:absolute before:w-28 before:h-0.5 before:bg-slate-600 dark:before:bg-slate-100 before:left-1 before:top-4 after:absolute after:w-28 after:h-0.5 after:bg-slate-600 dark:after:bg-slate-100 after:right-1 after:top-4  ">FORM THE JOURNAL</div>
             </div>
 
             <div className="grid grid-cols-3 gap-4 mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -82,6 +89,7 @@ export default function Blog() {
     )
 
 }
+
 
 
 
