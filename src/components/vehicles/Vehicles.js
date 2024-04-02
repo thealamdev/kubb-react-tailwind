@@ -34,7 +34,6 @@ export default function Vehicles(props) {
         };
     }, []);
 
-
     const vehicleItem = vehicles.map((item, index) => {
         return (
             <div className='card hover:shadow' key={index}>
