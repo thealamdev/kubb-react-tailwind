@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutService(props) {
     return (
         <div className='container py-10'>
-            <div className='grid grid-cols-2 gap-4'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2'>
                 <div className=''>
                     <h3 className='text-heading'>{props.heading1}</h3>
                     <div className='flex pt-10'>

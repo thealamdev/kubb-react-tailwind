@@ -8,6 +8,7 @@ import About from './components/about/About';
 import AboutService from './components/about-service/AboutService';
 import Vehicles from './components/vehicles/Vehicles';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Gallary />
       <Blog />
       <AboutService heading1={'A LITTLE ABOUT ME'} heading2={'MY SERVICES'} />
+      <Footer />
     </div>
 
   );
