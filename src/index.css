@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-3/5 m-auto;
+  }
+
+  .card {
+    @apply p-3 border border-slate-100 rounded-lg
+  }
+}
