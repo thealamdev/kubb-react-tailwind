@@ -33,3 +33,22 @@ code {
     @apply inline text-white dark:text-slate-100 font-medium text-sm pr-5 transition duration-500 hover:text-sky-400
   }
 }
+
+/* @layer utilities {
+  .text-body {
+    font-size: 50px;
+    color: white;
+  }
+
+}
+@layer base{
+  h1{
+  font-size: 19px;
+  }
+} */
+
+@variants hover, :focus {
+  .rotate-0 {
+    transform: rotate(80deg)
+  }
+}
