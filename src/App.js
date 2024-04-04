@@ -20,7 +20,7 @@ function App() {
       setLoading(false);
     }, 1000)
     return () => clearTimeout(timer);
-  });
+  }, [loading]);
 
   return (
     <div className='dark:bg-slate-900'>
