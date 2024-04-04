@@ -9,23 +9,39 @@ import AboutService from './components/about-service/AboutService';
 import Vehicles from './components/vehicles/Vehicles';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import React, { useState, useEffect } from 'react';
+import Placeholder from './components/placeholder/Placeholder';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className='dark:bg-slate-900'>
-      {/* <Register /> */}
-      <Navbar />
-      <Banner />
-      <About />
-      <Card heading={'WHAT SERVICES DO I OFFER'} />
-      <Vehicles heading={'VEHICLES'} />
-      <Gallary />
-      <Blog />
-      <AboutService heading1={'A LITTLE ABOUT ME'} heading2={'MY SERVICES'} />
-      <Footer />
+      {loading ? (
+        <Placeholder />
+      ) : (
+        <>
+          <Navbar />
+          <Banner />
+          <About />
+          <Card heading={'WHAT SERVICES DO I OFFER'} />
+          <Vehicles heading={'VEHICLES'} />
+          <Gallary />
+          <Blog />
+          <AboutService heading1={'A LITTLE ABOUT ME'} heading2={'MY SERVICES'} />
+          <Footer />
+        </>
+      )}
     </div>
-
   );
+
 }
 
 export default App;
